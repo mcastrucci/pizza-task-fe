@@ -1,0 +1,6 @@
+.home {
+    height: 100vh;
+    background-size: cover;
+
+    background-image: url(../../../images/background_2.jpg);
+}

@@ -1,0 +1,43 @@
+.nav-bar {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: -1px;
+    box-shadow: 2px 2px 5px #535c68;
+
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(151, 80, 19, 0.8);
+    color: white;
+}
+
+.nav-bar__button-container {
+    display: grid;
+    grid-template-columns: 0.3fr repeat(4, 1fr);
+}
+
+.nav-bar__button-container__button {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.nav-bar__button {
+    border-radius: 20px;
+    border: black solid 1px;
+}
+
+.nav-bar__icon{
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: gray solid .2px;
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.fa{
+    color: white;
+}
