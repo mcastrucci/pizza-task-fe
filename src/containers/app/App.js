@@ -32,7 +32,7 @@ class App extends Component{
           <meta charSet="utf-8" />
           <html lang="en"/>
           <title>Pizza-Task!</title>
-          <meta name="description" content="Best pizza Page ever" />
+          <meta name="description" content="Best pizza Page ever"/>
         </Helmet>
         <Header/>
         {(route === 'home') ?

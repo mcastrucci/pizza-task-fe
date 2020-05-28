@@ -3,41 +3,139 @@
     margin-bottom: 0.5rem;
     position: fixed;
     z-index: 1;
-    width: 100%;
     left: -1px;
     box-shadow: 2px 2px 5px #535c68;
-
-    height: 20vh;
     width: 100%;
-    background-color: rgba(151, 80, 19, 0.8);
-    color: white;
-}
-
-.nav-bar__button-container {
+    height: 120px;
+    background-color: #975013d9;
+    color: #ff7900;
     display: grid;
-    grid-template-columns: 0.3fr repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
 }
 
-.nav-bar__button-container__button {
-    margin-top: 2rem;
-    padding: 0.5rem;
+.nav-bar__little-container {
+    background-color: #4c4c4c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar__little-container__social{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
     margin-left: 1rem;
 }
 
-.nav-bar__button {
-    border-radius: 20px;
-    border: black solid 1px;
+
+.nav-bar__little-container__social__bar{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.nav-bar__icon{
+.nav-bar__little-container__social__bar__brand {
+    width: 1rem;
+    height: 1.1rem;
+    padding: .2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar__little-container__social__bar__brand:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.nav-bar__little-container__button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.nav-bar__little-container__social__email {
+    cursor: pointer;
+}
+
+
+.nav-bar__button-container {
+    display: grid;
+    grid-template-columns: 20% repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav-bar__button-container__button {
+    cursor: pointer;
     font-size: 1.5rem;
-    border-radius: 50%;
-    border: gray solid .2px;
-    margin-bottom: 1rem;
-    width: 3rem;
-    height: 3rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
 }
 
-.fa{
-    color: white;
+.nav-bar__button-container__button:hover {  
+    background-color: #9751139d;
+    transition: .3s;
+}
+
+.nav-bar__button-container__button:hover::after {
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.nav-bar__button-container__button:hover p{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+
+.nav-bar__button-container__button p{
+    margin: 0;
+}
+
+.nav-bar__button-container__button::after {
+    margin-left: 5px;
+    content: "^";
+}
+
+.nav-bar__logo{
+    margin: 0;
+    justify-self: start;
+    align-self: stretch;
+    height: 50px;
+    margin-left: 2rem;
+}
+
+.nav-bar__logo img{
+    height: 200%;
+}
+
+.nav_bar__fa--pizza {
+    color: orange;
+}
+
+.nav-bar__icon p{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar--pointer {
+    cursor: pointer;
+}
+
+.nav-bar--h-scale:hover{
+    transform: scale(1.2);
+    transition: .3s;
 }

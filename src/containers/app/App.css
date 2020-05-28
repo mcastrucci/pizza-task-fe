@@ -1,10 +1,39 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0px 120vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.fa-icon {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.brand--i{
+  background-color: #e4405f;
+}
+
+.brand--t{
+  background-color: #55acee;
+}
+
+.brand--f{
+  background-color: #3b5999;
+}
+
+.brand--y{
+  background-color: #ff3300;
+}
+
+.brand--g{
+  background-color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
