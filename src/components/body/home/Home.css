@@ -59,7 +59,19 @@
     animation: pizza-startup 1s 0s 1, slice-startup 1s 1.4s forwards;
 }
 
+@media only screen and (max-width: 1000px) {
+    .home__pizza-container{
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
 
+    .home__wooden-table, .home__pizza--pizza, .home__pizza--slice{
+        grid-row-start:2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 8;
+    }
+}
 
 @keyframes pizza-startup{
     0% {

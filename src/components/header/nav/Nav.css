@@ -139,3 +139,21 @@
     transform: scale(1.2);
     transition: .3s;
 }
+
+@media only screen and (max-width: 1000px) {
+    .nav-bar__little-container__social{
+        width: 30%;
+    }
+
+    .nav-bar__button-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .nav-bar {
+        position: relative;
+        height: 100%;
+    }
+
+}

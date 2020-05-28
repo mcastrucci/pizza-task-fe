@@ -65,3 +65,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 100vh;
+  }
+
+}
