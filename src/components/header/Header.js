@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import Nav from './nav/Nav';
+import StickyNav from './sticky-nav/StickyNav'
 
 class Header extends Component {
 
@@ -12,6 +13,7 @@ class Header extends Component {
         return (
             <header className='header'>
                 <Nav/>
+                <StickyNav/>
             </header>
         );
     }

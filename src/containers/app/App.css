@@ -73,3 +73,10 @@
   }
 
 }
+
+@media only screen and (max-height: 650px){
+
+  .App {
+    grid-template-rows: 20vh 100vh;
+  }
+}
